@@ -1,0 +1,42 @@
+@import "./overrides";
+@import "./raleway-font";
+
+.product-box {
+    text-align: center;
+    border: 0;
+}
+
+
+.product-image-wrapper {
+    height: $box-standard-height-img;
+}
+
+.product-image {
+    max-height: $box-standard-height-img;
+}
+
+
+body {
+    padding-top: 9rem;
+
+    @media (max-width: 768px) {
+        padding-top: 3rem;
+    }
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    border-bottom: none;
+    z-index: 10;
+}
+
+.header-row {
+
+    @media (min-width: 768px) {
+        margin-top: -30px;
+    }
+}

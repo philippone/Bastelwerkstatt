@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["bastelwerkstatt"],{SfcI:function(n,w){}},[["SfcI","runtime"]]]);

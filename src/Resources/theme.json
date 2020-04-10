@@ -1,0 +1,82 @@
+{
+    "name": "bastelwerkstatt",
+    "author": "Philipp Schardt",
+    "views": [
+        "@Storefront",
+        "@Plugins",
+        "@bastelwerkstatt"
+    ],
+    "style": [
+        "app/storefront/src/scss/overrides.scss",
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront",
+        "app/storefront/dist/storefront/js/bastelwerkstatt.js"
+    ],
+    "asset": [
+        "app/storefront/src/assets"
+    ],
+    "config": {
+        "fields": {
+            "sw-color-brand-primary": {
+                "value": "#b57070"
+            },
+            "sw-color-brand-secondary": {
+                "value": "#5d5d5d"
+            },
+            "sw-border-color": {
+                "value": "#b3b3b3"
+            },
+            "sw-background-color": {
+                "value": "#ffffff"
+            },
+            "sw-color-success": {
+                "value": "#769794"
+            },
+            "sw-color-info": {
+                "value": "#b57070"
+            },
+            "sw-color-warning": {
+                "value": "#b57070"
+            },
+            "sw-color-danger": {
+                "value": "#BD5252"
+            },
+            "sw-text-color": {
+                "value": "#5d5d5d"
+            },
+            "sw-headline-color": {
+                "value": "#5d5d5d"
+            },
+            "sw-color-price": {
+                "value": "#5d5d5d"
+            },
+            "sw-color-buy-button": {
+                "value": "#b57070"
+            },
+            "sw-color-buy-button-text": {
+                "value": "#fff"
+            },
+            "sw-font-family-base": {
+                "value": "'Raleway', sans-serif"
+            },
+            "sw-font-family-headline": {
+                "value": "'Raleway', sans-serif"
+            },
+            "sw-logo-desktop": {
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+            },
+            "sw-logo-tablet": {
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+            },
+            "sw-logo-mobile": {
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+            },
+            "sw-logo-favicon": {
+                "value": "app/storefront/dist/assets/logo/favicon.png"
+            }
+        }
+    }
+}
