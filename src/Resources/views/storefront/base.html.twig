@@ -30,6 +30,16 @@
                      </div>
                  {% endblock %}
 
+                 <div class="row align-items-center">
+
+                     {% block layout_header_search %}
+                         <div class="col-12 order-2 col-sm order-sm-1 header-search-col">
+                                     {% sw_include '@Storefront/storefront/layout/header/search.html.twig' %}
+                         </div>
+                     {% endblock %}
+
+                 </div>
+
              </header>
          {% endblock %}
 

@@ -1,9 +1,11 @@
 @import "./overrides";
 @import "./raleway-font";
 
+$box-standard-height-img: 220px;
+
 .product-box {
     text-align: center;
-    border: 0;
+    border:     0;
 }
 
 
@@ -17,26 +19,76 @@
 
 
 body {
-    padding-top: 9rem;
+    padding-top: 13rem;
 
     @media (max-width: 768px) {
-        padding-top: 3rem;
+        padding-top: 11rem;
     }
 }
 
 .header-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255,255,255,0.95);
+    position:      fixed;
+    top:           0;
+    left:          0;
+    width:         100%;
+    background:    rgba(255, 255, 255, 0.95);
     border-bottom: none;
-    z-index: 10;
+    z-index:       10;
+    padding-bottom: 20px;
 }
 
 .header-row {
 
     @media (min-width: 768px) {
         margin-top: -30px;
+    }
+}
+
+#searchCollapse {
+    padding: 10px 20px;
+}
+
+@media (min-width: 576px) {
+    .header-search-col .collapse:not(.show) {
+        display: none;
+    }
+}
+
+.nav.main-navigation-menu {
+    flex-wrap:       nowrap;
+    justify-content: center;
+
+    a.nav-link.main-navigation-link {
+        padding:     0 15px;
+        font-weight: 600;
+    }
+}
+
+.breadcrumb {
+    justify-content: center;
+    text-transform:  uppercase;
+    font-weight:     800;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.container-main {
+    padding: 0;
+}
+
+//.cms-block-container {
+//    padding: 0 !important;
+//}
+
+@media (min-width: 768px) {
+
+    .footer-column-headline {
+        justify-content: center;
+        font-size:       18px;
+    }
+    .footer-column {
+        text-align: center;
     }
 }
