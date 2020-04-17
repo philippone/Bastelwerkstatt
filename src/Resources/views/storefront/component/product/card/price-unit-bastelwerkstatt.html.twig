@@ -12,15 +12,15 @@
                 {% if product.priceRange %}
                     {{ fromPrice.unitPrice|currency }}
                     -
-                    {{ listingPrice.to.unitPrice|currency }}{{ "general.star"|trans|sw_sanitize }}
+                    {{ listingPrice.to.unitPrice|currency }}
                 {% elseif product.calculatedPrices|length == 1 %}
-                    {{ product.calculatedPrices.first.unitPrice|currency }}{{ "general.star"|trans|sw_sanitize }}
+                    {{ product.calculatedPrices.first.unitPrice|currency }}
                 {% else %}
-                    {{ product.calculatedPrice.unitPrice|currency }}{{ "general.star"|trans|sw_sanitize }}
+                    {{ product.calculatedPrice.unitPrice|currency }}
 
                     {% if listPrice.percentage > 0 %}
                         <span class="list-price">
-                            {{ listPrice.price|currency }}{{ "general.star"|trans|sw_sanitize }}
+                            {{ listPrice.price|currency }}
                         </span>
                     {% endif %}
                 {% endif %}

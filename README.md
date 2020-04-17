@@ -12,9 +12,11 @@
 # Build Theme
 
 ```shell
-./psh.phar storefront:build
 bin/console plugin:install --activate Bastelwerkstatt
 
+bin/console theme:change
+
+./psh.phar storefront:build
 bin/console theme:refresh
 ```
 

@@ -20,7 +20,27 @@
         "app/storefront/src/assets"
     ],
     "config": {
+        "blocks": {
+            "buttons": {
+                "label": {
+                    "en-GB": "Button Colors",
+                    "de-DE": "Button Farben"
+                }
+            }
+        },
         "fields": {
+            "sw-color-btn-primary": {
+                "label": {
+                    "en-GB": "Primary colour",
+                    "de-DE": "Primärfarbe"
+                },
+                "type": "color",
+                "value": "#fff",
+                "editable": true,
+                "block": "buttons",
+                "order": 100
+            },
+
             "sw-color-brand-primary": {
                 "value": "#b57070"
             },
@@ -28,7 +48,7 @@
                 "value": "#5d5d5d"
             },
             "sw-border-color": {
-                "value": "#b3b3b3"
+                "value": "#D1D1D1"
             },
             "sw-background-color": {
                 "value": "#ffffff"

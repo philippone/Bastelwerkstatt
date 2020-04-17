@@ -1,6 +1,10 @@
 @import "./overrides";
 @import "./raleway-font";
 
+
+// theme variables
+$sw-color-btn-primary: #fff;
+
 $box-standard-height-img: 220px;
 
 .product-box {
@@ -27,13 +31,13 @@ body {
 }
 
 .header-main {
-    position:      fixed;
-    top:           0;
-    left:          0;
-    width:         100%;
-    background:    rgba(255, 255, 255, 0.95);
-    border-bottom: none;
-    z-index:       100;
+    position:       fixed;
+    top:            0;
+    left:           0;
+    width:          100%;
+    background:     rgba(255, 255, 255, 0.95);
+    border-bottom:  none;
+    z-index:        100;
     padding-bottom: 20px;
 }
 
@@ -91,4 +95,270 @@ body {
     .footer-column {
         text-align: center;
     }
+}
+
+
+/*
+Textbausteine entfernen
+1. general.star
+*/
+
+* {
+    border-radius: 0;
+    //font-weight:   300;
+}
+
+.btn-primary {
+    color: $sw-color-btn-primary;
+}
+
+.btn-primary .icon {
+    color: $sw-color-btn-primary;
+}
+
+
+.main-navigation-link .main-navigation-link-text {
+    border-bottom:  none;
+    text-transform: uppercase;
+}
+
+.main-navigation-link .active {
+    font-weight: 500;
+}
+
+.top-bar-nav-btn.btn {
+    display: none;
+}
+
+.icon .icon-search {
+    width:  18px;
+    height: 18px;
+    color:  $sw-color-brand-secondary;
+    margin: 0rem -0.3rem;
+}
+
+.icon .icon-avatar {
+    width:  18px;
+    height: 18px;
+    color:  $sw-color-brand-secondary;
+    margin: 0rem -0.3rem;
+}
+
+.icon .icon-bag {
+    width:  18px;
+    height: 18px;
+    color:  $sw-color-brand-secondary;
+    margin: 0 0 0 -0.3rem;
+}
+
+input.form-control.header-search-input {
+    border-top:    none;
+    border-left:   none;
+}
+
+button.btn.header-search-btn {
+    border-top: 0;
+    border-right: 0;
+}
+
+.header-search-form {
+    margin-top: 1rem;
+}
+
+a.product-name {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-weight: 500;
+}
+
+.card-title {
+    padding-bottom: 2rem;
+    text-align:     center;
+    text-transform: uppercase;
+    font-size:      1.5rem;
+    font-weight:    300;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.custom-select {
+    border-radius: 0;
+    color:         $sw-border-color;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.custom-select .contact-select {
+    width:   50%;
+    display: block;
+}
+
+.footer-vat {
+    display: none;
+}
+
+.dropdown-menu .dropdown-menu-right .account-menu-dropdown .js-account-menu-dropdown .show {
+    text-transform: uppercase;
+}
+
+.dropdown-header .account-menu-header {
+    text-align:    center;
+    margin:        0rem 0rem -0.75em 0rem;
+    border-bottom: none;
+}
+
+.account-menu-register {
+    text-transform: lowercase;
+}
+
+.account-menu-offcanvas .account-aside-item, .account-menu-dropdown .account-aside-item {
+    padding: .4rem 0;
+}
+
+.cms-element-product-listing-actions .row .justify-content-between {
+    display: none;
+}
+
+.page-link {
+    border:  none;
+    padding: .25rem .75rem;
+    color:   $sw-color-brand-secondary;
+}
+
+.pagination .page-item.disabled .page-link {
+    background: #FFFFFF;
+}
+
+.filter-multi-select .filter-multi-select-manufacturer .filter-panel-item .dropdown {
+    display: none;
+}
+
+.filter-rating .filter-panel-item .dropdown {
+    display: none;
+}
+
+.filter-panel {
+    margin-bottom: 0;
+}
+
+.footer-column-headline {
+    text-transform: uppercase;
+}
+
+#collapseFooter1 {
+    text-transform: uppercase;
+}
+
+#collapseFooter2 {
+    text-transform: uppercase;
+}
+
+.icon .icon-shopware .icon-xs {
+    display: none;
+}
+
+.footer-bottom {
+    background-color: #C8A1A1;
+}
+
+.footer-columns {
+    justify-content: center;
+}
+
+.footer-column {
+    margin: 0rem -4rem;
+}
+
+.checkout-container {
+    justify-content: center;
+}
+
+.checkout-main {
+    flex:      0 0 90%;
+    max-width: 90%;
+}
+
+.cart-main-header {
+    text-transform: uppercase;
+    font-weight:    500;
+    text-align:     center;
+    margin-bottom:  3rem;
+}
+
+.col-lg-8, .is-act-cartpage .checkout .checkout-main, .is-act-checkoutregisterpage .checkout .checkout-main, .is-act-confirmpage .checkout .checkout-main, .is-act-finishpage .checkout .checkout-main {
+    max-width: 90%;
+    flex:      none;
+}
+
+.cart-item-img {
+    border: none;
+    height: 10rem;
+}
+
+.cart-item-label {
+    font-size: 1.5rem;
+}
+
+.cart-item-delivery-date {
+    font-size: 0.75rem;
+}
+
+.custom-select .quantity-select {
+    border-top:    none;
+    border-left:   none;
+    border-right:  none;
+    border-radius: 0;
+    border-color:  $sw-color-brand-secondary;
+}
+
+.btn .btn-secondary {
+    border-radius: 0;
+}
+
+.offset-xl-1, .account-content .account-content-main, .is-act-cartpage .checkout .checkout-aside, .is-act-checkoutregisterpage .checkout .checkout-aside {
+    margin-right: 10%;
+}
+
+.checkout-aside-summary-header {
+    display: none;
+}
+
+.checkout-aside-summary {
+    text-transform:   uppercase;
+    background-color: transparent;
+}
+
+.checkout-aside-container {
+    width: 28rem;
+}
+
+.checkout-aside-summary-value {
+    margin-left: -2rem;
+}
+
+.checkout-aside-summary-label {
+    text-align: right;
+}
+
+.cart-shipping-costs-container {
+    flex:      none;
+    max-width: none;
+    display:   flex;
+}
+
+.col-md-8 .cart-shipping-costs-container .custom-select {
+    border-top:    none;
+    border-left:   none;
+    border-right:  none;
+    border-radius: 0;
+    border-color:  $sw-color-brand-secondary;
 }
