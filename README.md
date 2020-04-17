@@ -2,17 +2,18 @@
 
 # Docker Setup
 
-```
-> ./psh.phar docker:start
-> ./psh.phar docker:ssh
-> ./psh.phar install 
+```shell
+./psh.phar docker:start
+./psh.phar docker:ssh
+./psh.phar install 
 ```
 
 
 # Build Theme
 
-```
+```shell
 ./psh.phar storefront:build
+bin/console plugin:install --activate Bastelwerkstatt
 
 bin/console theme:refresh
 ```
