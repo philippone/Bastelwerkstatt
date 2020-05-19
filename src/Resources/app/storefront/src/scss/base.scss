@@ -3,7 +3,7 @@
 
 
 // theme variables
-$sw-color-btn-primary: #fff;
+$sw-color-btn-primary:    #FFFFFF;
 
 $box-standard-height-img: 220px;
 
@@ -64,14 +64,42 @@ body {
 
     a.nav-link.main-navigation-link {
         padding:     0 15px;
-        font-weight: 600;
+        font-weight: 300;
+
+        &.active {
+            font-weight: 600;
+        }
     }
+}
+
+.navigation-offcanvas-list-item {
+    border:         0 !important;
+    text-transform: uppercase;
+}
+
+.navigation-offcanvas-headline {
+    display: none;
+}
+
+// show all categories
+a.nav-item.nav-link.is-home-link.navigation-offcanvas-link.js-navigation-offcanvas-link {
+    text-transform: uppercase;
+}
+
+// hide back button
+a.nav-item.nav-link.is-back-link.navigation-offcanvas-link.js-navigation-offcanvas-link {
+    display: none;
+}
+
+.header-actions-col .row .col-auto {
+    margin: 0 -5px;
+    color:  $sw-border-color;
 }
 
 .breadcrumb {
     justify-content: center;
     text-transform:  uppercase;
-    font-weight:     800;
+    font-weight:     300;
 }
 
 .pagination {
@@ -152,12 +180,12 @@ Textbausteine entfernen
 }
 
 input.form-control.header-search-input {
-    border-top:    none;
-    border-left:   none;
+    border-top:  none;
+    border-left: none;
 }
 
 button.btn.header-search-btn {
-    border-top: 0;
+    border-top:   0;
     border-right: 0;
 }
 
@@ -166,9 +194,9 @@ button.btn.header-search-btn {
 }
 
 a.product-name {
-    margin: 0;
-    padding: 0;
-    height: auto;
+    margin:      0;
+    padding:     0;
+    height:      auto;
     font-weight: 500;
 }
 
@@ -268,14 +296,11 @@ a.product-name {
 
 .footer-bottom {
     background-color: #C8A1A1;
+    margin:           0 -20px;
 }
 
 .footer-columns {
     justify-content: center;
-}
-
-.footer-column {
-    margin: 0rem -4rem;
 }
 
 .checkout-container {
@@ -361,4 +386,63 @@ a.product-name {
     border-right:  none;
     border-radius: 0;
     border-color:  $sw-color-brand-secondary;
+}
+
+.scroll-up-button {
+    bottom: 4.5rem;
+}
+
+
+// center filters
+.filter-panel-items-container {
+    justify-content: center;
+}
+
+// hide rating filter
+.filter-panel-item[data-filter-rating] {
+    display: none;
+}
+
+// hide manufacturer filter
+.filter-multi-select-manufacturer {
+    display: none;
+}
+
+// hide product listing and pagination above products
+.cms-element-product-listing-actions {
+    display: none;
+}
+
+
+.product-detail-name {
+    font-weight:    300;
+    text-align:     center;
+    text-transform: uppercase;
+}
+
+.product-detail-configurator-option-input:not(:checked) + .product-detail-configurator-option-label {
+    border: 0;
+}
+
+.product-detail-configurator-option-input:not(:checked) + .product-detail-configurator-option-label:hover {
+    border: 0;
+}
+
+// product color image
+label.product-detail-configurator-option-label.is-combinable.is-display-media {
+    height: 120px;
+}
+
+.gallery-slider-thumbnails-item-inner {
+    border: none;
+}
+
+
+.product-detail-tab-navigation-link {
+    text-transform: uppercase;
+}
+
+// TODO disable review tab
+#review-tab {
+    display: none;
 }

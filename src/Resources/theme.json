@@ -42,13 +42,13 @@
             },
 
             "sw-color-brand-primary": {
-                "value": "#b57070"
+                "value": "#c8a1a1"
             },
             "sw-color-brand-secondary": {
                 "value": "#5d5d5d"
             },
             "sw-border-color": {
-                "value": "#D1D1D1"
+                "value": "#5d5d5d"
             },
             "sw-background-color": {
                 "value": "#ffffff"
@@ -57,10 +57,10 @@
                 "value": "#769794"
             },
             "sw-color-info": {
-                "value": "#b57070"
+                "value": "#c8a1a1"
             },
             "sw-color-warning": {
-                "value": "#b57070"
+                "value": "#c8a1a1"
             },
             "sw-color-danger": {
                 "value": "#BD5252"
@@ -75,7 +75,7 @@
                 "value": "#5d5d5d"
             },
             "sw-color-buy-button": {
-                "value": "#b57070"
+                "value": "#c8a1a1"
             },
             "sw-color-buy-button-text": {
                 "value": "#fff"
@@ -87,13 +87,13 @@
                 "value": "'Raleway', sans-serif"
             },
             "sw-logo-desktop": {
-                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo-small.svg"
             },
             "sw-logo-tablet": {
-                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo-small.svg"
             },
             "sw-logo-mobile": {
-                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo.png"
+                "value": "/bundles/bastelwerkstatt/assets/images/mb-logo-small.svg"
             },
             "sw-logo-favicon": {
                 "value": "app/storefront/dist/assets/logo/favicon.png"
