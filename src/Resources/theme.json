@@ -1,6 +1,6 @@
 {
     "name": "bastelwerkstatt",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Philipp Schardt",
     "views": [
         "@Storefront",
